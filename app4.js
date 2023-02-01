@@ -9,4 +9,4 @@ function aclean(arr) {
 }
 // const arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 const arr = ["pan", "aal", "ala", "apn", "teeew", "ewtee"];
-alert(aclean(arr));
+console.log(aclean(arr));
