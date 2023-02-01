@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style6.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Student Registeration Form</h1>
+      <form onsubmit="saveData(e)">
+        <div>
+          <label>Firstname:</label>
+          <input id='name' type="text" name="firstname" placeholder="Firstname" />
+        </div>
+
+        <div>
+          <label>Middlename:</label>
+          <input id="midname" type="text" name="middlename" placeholder="Middlename" />
+        </div>
+
+        <div>
+          <label>Lastname:</label>
+          <input id="family" type="text" name="lastname" placeholder="Lastname" />
+        </div>
+        <div>
+          Course :
+          <select name="course" id="course">
+            <option value="bachelor">bachelor</option>
+            <option value="master">master</option>
+            <option value="doctor">doctor</option>
+          </select>
+        </div>
+
+        <!-- <div class="radio-btn">
+          <p>Gender :</p>
+
+          <div class="radio-1">
+            <label for="male"> Male </label>
+            <input type="radio" value="male" />
+          </div>
+          <div class="radio-2">
+            <label for="female"> Female </label>
+            <input type="radio" value="female" />
+          </div>
+          <div class="radio-3">
+            <label for="other"> Other </label>
+            <input type="radio" value="other" />
+          </div>
+        </div>
+        <div>
+          <label> Phone :</label>
+          <input type="text" name="phone" placeholder="+91" />
+        </div>
+        <div>
+          <label> Current Address :</label>
+        </div> -->
+
+        <div class="gender-details">
+            <input type="radio" name="gender" value="male" id="dot-1">
+            <input type="radio" name="gender" value="female" id="dot-2">
+            <input type="radio" name="gender" value="other" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Other</span>
+              </label>
+            </div>
+
+        <div>
+          <textarea
+          id="address"
+            rows="5"
+            name="address"
+            placeholder="Current Address"
+          ></textarea>
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Password"
+            pattern="[A-Za-z0-9._%+-].+@gmail\.com"
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input id="pass1" type="password" name="password" placeholder="Enter Password" />
+        </div>
+        <div>
+          <label>Re-type Password:</label>
+          <input
+            type="password"
+            id="pass2"
+            name="password"
+            placeholder="Retype Password"
+          />
+        </div>
+        <div>
+          <input id="submit" type="submit" />
+          <!-- <button>Register</button> -->
+        </div>
+      </form>
+    </main>
+    <script src="./app6.js"></script>
+  </body>
+</html>
