@@ -6,12 +6,13 @@ const course = document.getElementById("course");
 const male = document.getElementById("male");
 const female = document.getElementById("female");
 const other = document.getElementById("other");
+let gender;
 const address = document.getElementById("address");
 const email = document.getElementById("email");
 const pass1 = document.getElementById("pass1");
 const pass2 = document.getElementById("pass2");
 const form = document.getElementById("form");
-let gender;
+const phone = document.getElementById("phone");
 
 const submit = document.getElementById("submit");
 
@@ -49,6 +50,25 @@ function saveData(e) {
   } else {
     alert("your form send successfully!");
     // return true;
+  }
+  //get Gender options
+  if (male.checked) {
+    gender = "male";
+  } else if (female.checked) {
+    gender = "female";
+  } else if (other.checked) {
+    gender = other;
+  }
+  if (!gender) {
+    alert("select gender");
+    return false;
+  }
+
+  //phone required
+
+  if (phone === "") {
+    alert("please enter your phone number ");
+    return false;
   }
   // console.log(firstName);
   console.log(firstName.value);
