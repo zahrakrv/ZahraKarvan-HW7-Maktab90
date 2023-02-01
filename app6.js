@@ -52,6 +52,7 @@ function saveData(e) {
     // return true;
   }
   //get Gender options
+
   if (male.checked) {
     gender = "male";
   } else if (female.checked) {
