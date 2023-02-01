@@ -5,7 +5,7 @@
 // keys.push("more");
 
 //چون map.keys()
-//آرایه به دست نمی دهد.
+//آرایه نمی دهد.
 let map = new Map();
 map.set("name", "John");
 let keys = Array.from(map.keys());
